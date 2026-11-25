@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MVP Conf · Orquestração de Agentes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700;900&family=Oswald:wght@300;400&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/demo.css" />
+</head>
+<body>
+  <div id="app" data-mode="live">
+    <!-- LIVE DEMO (MVP Conf palette) -->
+    <section id="stage-view" class="stage-view">
+      <header class="topbar">
+        <div class="brand-row">
+          <span class="event-mark">MVP CONF</span>
+          <span class="dot">·</span>
+          <span class="talk-mark">Orquestração de Agentes</span>
+          <img class="stage-hcode-mark" src="/assets/brand/hcode-training-white.png" alt="Hcode Training" />
+        </div>
+        <div class="transcript-wrap">
+          <span class="transcript-label">COMANDO</span>
+          <p id="transcript" class="transcript">Aguardando comando de voz ou texto…</p>
+        </div>
+        <div class="timers">
+          <div class="timer total">
+            <span class="timer-label">TOTAL</span>
+            <span id="timer-total" class="timer-value">00:00</span>
+          </div>
+          <div class="timer stage">
+            <span class="timer-label" id="timer-stage-label">ETAPA</span>
+            <span id="timer-stage" class="timer-value">00:00</span>
+            <span id="timer-budget" class="timer-budget"></span>
+          </div>
+        </div>
+      </header>
+
+      <div class="main-grid">
+        <div class="graph-panel">
+          <canvas id="graph" width="1400" height="720" aria-label="Grafo de agentes"></canvas>
+          <div class="pipeline-legend" id="pipeline-legend"></div>
+        </div>
+        <aside class="stream-panel">
+          <div class="stream-head">
+            <span id="active-agent-label">Agente</span>
+            <span id="active-pattern" class="pattern-pill"></span>
+          </div>
+          <pre id="stream-text" class="stream-text"></pre>
+        </aside>
+      </div>
+
+      <footer class="controls">
+        <div class="input-row">
+          <button id="btn-mic" class="btn mic" title="Segure Espaço ou clique">🎤</button>
+          <input id="request-input" type="text" placeholder='Ex.: Preciso de uma proposta de treinamento de agentes de IA para a empresa Contoso' />
+          <button id="btn-start" class="btn primary">Disparar</button>
+        </div>
+        <div class="action-row">
+          <label class="chk"><input type="checkbox" id="chk-mock" /> Mock</label>
+          <label class="chk"><input type="checkbox" id="chk-webspeech" checked /> Web Speech</label>
+          <button id="btn-replay" class="btn ghost" title="Tecla R">Replay</button>
+          <button id="btn-golden" class="btn ghost" title="Shift+R">Golden</button>
+          <button id="btn-stop" class="btn ghost">Parar</button>
+          <span id="status-line" class="status-line"></span>
+        </div>
+      </footer>
+    </section>
+
+    <!-- FINAL PROPOSAL (Hcode Training palette) -->
+    <section id="proposal-view" class="proposal-view hidden" aria-live="polite">
+      <div class="proposal-inner">
+        <header class="proposal-header">
+          <img id="hcode-logo" class="hcode-logo" src="/assets/brand/hcode-training-color.png" alt="Hcode Training" />
+          <div class="proposal-actions no-print">
+            <button id="btn-print" class="btn hcode">Exportar PDF</button>
+            <button id="btn-back" class="btn hcode-ghost">Voltar ao palco</button>
+          </div>
+        </header>
+        <div class="proposal-hero-card">
+          <p class="eyebrow">PROPOSTA COMERCIAL</p>
+          <h1 id="proposal-title">Capacitação que transforma interesse em operação</h1>
+          <p id="proposal-sub" class="proposal-sub"></p>
+        </div>
+        <div class="proposal-images" id="proposal-images"></div>
+        <article id="proposal-body" class="proposal-body"></article>
+        <aside class="stage-times no-print" id="stage-times"></aside>
+        <footer class="proposal-footer">
+          <div class="orange-line"></div>
+          <p>Hcode Training · Glaucio Daniel · MVP Conf</p>
+        </footer>
+      </div>
+    </section>
+  </div>
+
+  <script src="/static/js/graph.js"></script>
+  <script src="/static/js/proposal.js"></script>
+  <script src="/static/js/demo.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "company": "Empresa exemplo",
+  "sector": "Tecnologia e serviços digitais",
+  "summary": "Organização em jornada de adoção de IA generativa, com POCs em andamento e necessidade de padronizar orquestração de agentes.",
+  "ai_maturity": "exploratória",
+  "news_hints": [
+    "Investimento em produtividade com IA",
+    "Programas de capacitação digital"
+  ],
+  "tech_signals": ["nuvem", "APIs", "automação", "dados"]
+}

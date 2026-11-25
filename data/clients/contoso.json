@@ -1,0 +1,11 @@
+{
+  "company": "Contoso",
+  "sector": "Serviços financeiros e tecnologia",
+  "summary": "A Contoso busca capacitar squads de produto e engenharia para desenhar e operar agentes de IA com padrões claros de orquestração.",
+  "ai_maturity": "exploratória-avançada",
+  "news_hints": [
+    "Iniciativas de inovação com IA generativa",
+    "Foco em eficiência operacional e experiência do cliente"
+  ],
+  "tech_signals": ["Azure", "Microsoft 365", "APIs internas", "automação"]
+}

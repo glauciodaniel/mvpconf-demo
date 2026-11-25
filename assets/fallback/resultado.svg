@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <circle cx="980" cy="180" r="160" fill="#FF760C" opacity="0.35"/>
+  <circle cx="220" cy="560" r="200" fill="#FF760C" opacity="0.2"/>
+  <rect x="120" y="260" width="640" height="16" rx="8" fill="#FF760C"/>
+  <text x="120" y="360" font-family="Arial,sans-serif" font-size="56" fill="#101010">Resultado do time</text>
+  <text x="120" y="420" font-family="Arial,sans-serif" font-size="28" fill="#FF760C">Hcode Training · MVP Conf</text>
+</svg>

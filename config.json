@@ -1,0 +1,47 @@
+{
+  "budgets_seconds": {
+    "handoff": 15,
+    "research": 45,
+    "magentic": 50,
+    "group_chat": 40,
+    "images": 40
+  },
+  "token_limits": {
+    "triagem": 150,
+    "especialista": 200,
+    "pesquisador": 300,
+    "gerente": 400,
+    "analista": 400,
+    "sintetizador": 400,
+    "redator": 900,
+    "revisor": 250
+  },
+  "pricing": {
+    "note": "valores a combinar",
+    "default_hours": 16,
+    "format": "presencial + online"
+  },
+  "proposal_modules": [
+    {"name": "Fundamentos de Agentes de IA", "hours": 4},
+    {"name": "Orquestração Multiagente", "hours": 6},
+    {"name": "Laboratório Hands-on", "hours": 6}
+  ],
+  "mock": {
+    "total_target_seconds": 90,
+    "stage_seconds": {
+      "handoff": 8,
+      "research": 20,
+      "magentic": 22,
+      "group_chat": 20,
+      "images": 12
+    }
+  },
+  "magentic": {
+    "max_rounds": 3,
+    "stall_limit": 1
+  },
+  "group_chat": {
+    "max_rounds": 2
+  },
+  "warmup_ping": true
+}
